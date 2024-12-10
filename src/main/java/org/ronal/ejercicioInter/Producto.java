@@ -4,16 +4,25 @@ import org.ronal.ejercicioInter.Interfaces.Iproducto;
 
 abstract class Producto implements Iproducto {
     private int precio;
+    private double preciVenta;
 
-    public Producto(int precio) {
+    public Producto() {
         this.precio = precio;
     }
+
 
     public void setPrecio(int precio) {
         this.precio = precio;
     }
 
-    public int GetPrecio() {
+    @Override
+    public int getPrecio() {
         return this.precio;
     }
+
+    @Override
+    public double getPrecioVenta() {
+        return this.preciVenta;
+    }
+
 }
