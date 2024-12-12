@@ -15,7 +15,13 @@ public class Main {
                 , "no sea navo"
                 , "alfaguara");
         productos[2] = new IPhone(900, "13", "amarillo");
-        productos[3] = new Comics(250, new Date(), "martin goodman", "super man No1", "Marvel");
+
+        productos[3] = new Comics(250
+                , new Date()
+                , "martin goodman"
+                , "super man No1"
+                , "Marvel"
+                ,"superman");
     }
 
 
