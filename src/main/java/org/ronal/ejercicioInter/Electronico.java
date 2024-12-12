@@ -5,8 +5,8 @@ import org.ronal.ejercicioInter.Interfaces.IElectronico;
 abstract class Electronico extends Producto implements IElectronico {
     String fabricante;
 
-    public Electronico(int precioVenta) {
-
+    public Electronico(double precioVenta) {
+        super(precioVenta);
     }
 
     @Override

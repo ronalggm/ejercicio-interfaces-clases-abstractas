@@ -1,17 +1,21 @@
 package org.ronal.ejercicioInter;
 
+import org.ronal.ejercicioInter.Interfaces.ILibro;
+
 import java.util.Date;
 
-public class Libro extends Producto {
+public class Libro extends Producto implements ILibro {
     Date fechaPublicacion;
     String autor;
     String titulo;
     String editorial;
 
-    public Libro(Date fechaPublicacion
+    public Libro(double precioVenta
+            , Date fechaPublicacion
             , String autor
             , String titulo
-            , String editorial) {
+            , String editorial){
+        super(precioVenta);
         this.fechaPublicacion = fechaPublicacion;
         this.autor = autor;
         this.titulo = titulo;
@@ -19,7 +23,7 @@ public class Libro extends Producto {
 
     }
 
-
+    @Override
     public Date getFechaPublicacion() {
         return fechaPublicacion;
     }
@@ -28,6 +32,7 @@ public class Libro extends Producto {
         this.fechaPublicacion = fechaPublicacion;
     }
 
+    @Override
     public String getAutor() {
         return autor;
     }
@@ -36,6 +41,7 @@ public class Libro extends Producto {
         this.autor = autor;
     }
 
+    @Override
     public String getTitulo() {
         return titulo;
     }
@@ -44,6 +50,7 @@ public class Libro extends Producto {
         this.titulo = titulo;
     }
 
+    @Override
     public String getEditorial() {
         return editorial;
     }

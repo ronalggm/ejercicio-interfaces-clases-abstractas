@@ -5,8 +5,8 @@ public class TvLcd extends Electronico {
     String marca;
 
 
-    public TvLcd(int precio, String marca, int pulgadas) {
-        super(precio);
+    public TvLcd(int precioVenta, String marca, int pulgadas) {
+        super(precioVenta);
         this.pulgadas = pulgadas;
         this.marca = marca;
     }
